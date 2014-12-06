@@ -1,0 +1,93 @@
+/* line 8, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 13, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 20, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #555; }
+
+/* line 25, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 31, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.header, .main, .footer {
+  width: 100%;
+  display: block;
+  clear: both; }
+
+/* line 38, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.header {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 15px;
+  overflow: hidden;
+  border-bottom: 1px solid #efefef;
+  background-color: orange; }
+  /* line 46, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .header a.img {
+    float: left; }
+
+/* line 49, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.nav {
+  float: right;
+  color: #ffffff;
+  margin: 0px 100px 0px 0px; }
+  /* line 54, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .nav li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none; }
+    /* line 60, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    .nav li a {
+      padding: 40px 20px;
+      font-size: 20px; }
+
+/* line 65, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.main {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #efefef; }
+
+/* line 70, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.banner {
+  text-align: center;
+  width: 100%;
+  margin-top: -125px;
+  height: 600px;
+  background: red;
+  background: url(../../assets/images/banner.jpg);
+  background-size: cover; }
+  /* line 79, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .banner h2.name {
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    width: 600px;
+    text-align: center; }
+
+/* line 90, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.footer {
+  padding: 20px; }
+  /* line 93, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
