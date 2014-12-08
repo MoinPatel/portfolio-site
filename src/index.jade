@@ -44,7 +44,17 @@ html
 
     footer.footer
 
-      p Copyright &copy; 2014
+      ul.navfooter
+
+        li: a(href="/") Home
+
+        li: a(href="/work") Work
+
+        li: a(href="/about") About
+
+        li: a(href="/contact") Contact
+
+      p Copyright Moin Patel &copy; 2014
 
 
   // Templates
@@ -52,13 +62,53 @@ html
 
   script#home(type="text/template").
     <div class="page home">
-      {{{banner}}},
-      {{{content}}}
+      <div class="banner">
+        <h2 class="name">
+          {{title}}
+          <br>
+          {{subtitle}}
+        </h2>
+        <!--<a href="#recent">More</a>-->
+      </div>
+        <div class="recentproject">
+          <h3 class="title">Some recent projects</h3>
 
+          <div id="recent">
+
+            {{#project}}
+            <div class="projectone">
+              <a href="{{link}}">
+                <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+              </a>
+            </div>
+            {{/project}}
+
+          </div>
+        </div>
     </div>
 
   script#work(type="text/template").
-    <div class="page work">{{{content}}}</div>
+    <div class="page work">
+
+      <div class="header">
+
+        <h3 class="title">{{title}}</h3>
+
+        {{#projects}}
+          <div class="projects">
+            <a href="{{link}}">
+              <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+            </a>
+            
+            <div class="overlay">
+                <h2>It is overlay</h2>
+            </div>
+          </div>
+          <div class="overlay">
+          </div>
+        {{/projects}}
+      </div>
+    </div>
 
   script#about(type="text/template").
     <div class="page about">{{{content}}}</div>

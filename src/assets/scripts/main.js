@@ -85,9 +85,25 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        banner: '<div class="banner"><h2 class="name">Hello.  I AM Moin Patel <br>Web, User Interface & Interactive Designer</h2></div>',
-        content: '<h1>Home Page</h1>'
-        
+        title: 'Hello.  I AM Moin Patel',
+        subtitle: ' Web, User Interface & Interactive Designer',
+        project: [
+          {
+            link: "http://www.w3schools.com",
+            imgSrc: "../../assets/images/project-one.png",
+            imgAlt: "project one"
+          },
+          {
+            link: "http://www.w3schools.com",
+            imgSrc: "../../assets/images/project-one.png",
+            imgAlt: "project one"
+          },
+          {
+            link: "http://www.w3schools.com",
+            imgSrc: "../../assets/images/project-one.png",
+            imgAlt: "project one"
+          }
+        ]
       });
 
     },
@@ -105,6 +121,8 @@ jQuery(function($) {
 
   });
 
+
+  
   // -----------------------------
   // Work View
   // -----------------------------
@@ -126,7 +144,24 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Work Page</h1>'
+        title: 'This is Work Page',
+        projects: [
+          {
+            link: "http://www.w3schools.com",
+            imgSrc: "../../assets/images/project-one.png",
+            imgAlt: "project one"
+          },
+          {
+            link: "http://www.w3schools.com",
+            imgSrc: "../../assets/images/project-one.png",
+            imgAlt: "project one"
+          },
+          {
+            link: "http://www.w3schools.com",
+            imgSrc: "../../assets/images/project-one.png",
+            imgAlt: "project one"
+          }
+        ]
       });
     },
 
@@ -233,10 +268,15 @@ jQuery(function($) {
   // Navigation Links
   // -----------------------------
 
-  $(document).delegate('a', 'click', function(e) {
-    e.preventDefault();
-    App.router.navigate($(this).attr('href'), { trigger: true });
+  // Some code you can copy and paste.... ish
 
+  $(document).delegate('a', 'click', function(e) {
+    var url = $(this).attr('href') || '#';
+    var isLocal = url.match(/^#/)
+    if(isLocal) { 
+      e.preventDefault(); 
+      App.router.navigate($(this).attr('href'), { trigger: true }); 
+    }
   });
 
 
