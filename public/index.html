@@ -21,21 +21,67 @@
     </header>
     <div class="main"></div>
     <footer class="footer">
-      <p>Copyright &copy; 2014</p>
+      <ul class="navfooter">
+        <li><a href="/">Home</a></li>
+        <li><a href="/work">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <p>Copyright Moin Patel &copy; 2014</p>
     </footer>
   </div>
   <!-- Templates-->
   
   <script id="home" type="text/template">
     <div class="page home">
-      {{{banner}}},
-      {{{content}}}
+      <div class="banner">
+        <h2 class="name">
+          {{title}}
+          <br>
+          {{subtitle}}
+        </h2>
+        <!--<a href="#recent">More</a>-->
+      </div>
+        <div class="recentproject">
+          <h3 class="title">Some recent projects</h3>
     
+          <div id="recent">
+    
+            {{#project}}
+            <div class="projectone">
+              <a href="{{link}}">
+                <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+              </a>
+            </div>
+            {{/project}}
+    
+          </div>
+        </div>
     </div>
     
   </script>
   <script id="work" type="text/template">
-    <div class="page work">{{{content}}}</div>
+    <div class="page work">
+    
+      <div class="header">
+    
+        <h3 class="title">{{title}}</h3>
+    
+        {{#projects}}
+          <div class="projects">
+            <a href="{{link}}">
+              <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+            </a>
+            
+            <div class="overlay">
+                <h2>It is overlay</h2>
+            </div>
+          </div>
+          <div class="overlay">
+          </div>
+        {{/projects}}
+      </div>
+    </div>
     
   </script>
   <script id="about" type="text/template">
