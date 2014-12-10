@@ -45,18 +45,29 @@
         <div class="recentproject">
           <h3 class="title">Some recent projects</h3>
     
-          <div id="recent">
-    
-            {{#project}}
+          {{#project}}
             <div class="projectone">
-              <a href="{{link}}">
-                <img src="{{imgSrc}}" alt="{{imgAlt}}">   
-              </a>
+                <a href="{{link}}">
+                  <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+                </a>
+                
+                <div class="overlay-content">
+                  <h3>{{imgAlt}}</h3>
+                  <h5>{{imgAlt}}</h5>
+                  <div class="button">
+                    <a href="{{link}}">
+                      <h6>View</h6>
+                    </a>
+                  </div>
+                </div>
             </div>
             {{/project}}
+            
     
-          </div>
         </div>
+        <a href="/work" class="viewmore">
+          View More
+        </a>
     </div>
     
   </script>
@@ -67,19 +78,25 @@
     
         <h3 class="title">{{title}}</h3>
     
-        {{#projects}}
-          <div class="projects">
-    
-            <a href="{{link}}">
-              <img src="{{imgSrc}}" alt="{{imgAlt}}">   
-            </a>
-            <div class="overlay">
-              <a href="{{link}}" class="view">View project</a>
-            </div>
-    
+        {{#workproject}}
+          <div class="projectone">
+              <a href="{{link}}">
+                <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+              </a>
+              
+              <div class="overlay-content-work">
+                <h3>{{imgAlt}}</h3>
+                <h5>{{imgAlt}}</h5>
+                <div class="button">
+                  <a href="{{link}}">
+                    <h6>View</h6>
+                  </a>
+                </div>
+              </div>
           </div>
-        {{/projects}}
+          {{/workproject}}
       </div>
+      
     </div>
     
   </script>

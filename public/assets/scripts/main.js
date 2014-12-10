@@ -91,7 +91,7 @@ jQuery(function($) {
           {
             link: "http://www.w3schools.com",
             imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "Tandooti Night"
+            imgAlt: "tandooti Night"
           },
           {
             link: "http://www.w3schools.com",
@@ -144,13 +144,28 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        title: 'This is Work Page',
-        projects: [
-          {
-            link: "http://www.w3schools.com",
-            imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "project one"
-          }
+        title: 'Work',
+        workproject: [
+            {
+              link: "http://www.w3schools.com",
+              imgSrc: "../../assets/images/projectone-work.png",
+              imgAlt: "tandooti Night"
+            },
+            {
+              link: "http://www.w3schools.com",
+              imgSrc: "../../assets/images/projecttwo-work.png",
+              imgAlt: "tandooti Night"
+            },
+            {
+              link: "http://www.w3schools.com",
+              imgSrc: "../../assets/images/projectone-work.png",
+              imgAlt: "tandooti Night"
+            },
+            {
+              link: "http://www.w3schools.com",
+              imgSrc: "../../assets/images/projecttwo-work.png",
+              imgAlt: "tandooti Night"
+            }
         ]
       });
     },
