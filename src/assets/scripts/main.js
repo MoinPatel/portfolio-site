@@ -91,17 +91,17 @@ jQuery(function($) {
           {
             link: "http://www.w3schools.com",
             imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "project one"
+            imgAlt: "Tandooti Night"
           },
           {
             link: "http://www.w3schools.com",
-            imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "project one"
+            imgSrc: "../../assets/images/project-two.png",
+            imgAlt: "Not Far from the tree"
           },
           {
             link: "http://www.w3schools.com",
-            imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "project one"
+            imgSrc: "../../assets/images/project-three.png",
+            imgAlt: "InspiredMag"
           }
         ]
       });
@@ -146,16 +146,6 @@ jQuery(function($) {
       this.model.set({
         title: 'This is Work Page',
         projects: [
-          {
-            link: "http://www.w3schools.com",
-            imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "project one"
-          },
-          {
-            link: "http://www.w3schools.com",
-            imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "project one"
-          },
           {
             link: "http://www.w3schools.com",
             imgSrc: "../../assets/images/project-one.png",

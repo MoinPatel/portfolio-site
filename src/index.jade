@@ -54,7 +54,7 @@ html
 
         li: a(href="/contact") Contact
 
-      p Copyright Moin Patel &copy; 2014
+      p ©2014 Moin Patel. All Right Reserved.
 
 
   // Templates
@@ -96,15 +96,14 @@ html
 
         {{#projects}}
           <div class="projects">
+
             <a href="{{link}}">
               <img src="{{imgSrc}}" alt="{{imgAlt}}">   
             </a>
-            
             <div class="overlay">
-                <h2>It is overlay</h2>
+              <a href="{{link}}" class="view">View project</a>
             </div>
-          </div>
-          <div class="overlay">
+
           </div>
         {{/projects}}
       </div>
