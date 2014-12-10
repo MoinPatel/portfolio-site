@@ -52,7 +52,7 @@ a
   padding-top: 15px
   overflow: hidden
   border-bottom: 1px solid $lightColor
-  background-color: orange
+  // background-color: orange
 
   a.img
     float: left
@@ -82,7 +82,7 @@ a
 .navfooter
   float: right
   //margin-top: -40px
-  color: $wColor
+  color: white
   margin: 0px 5px 0px 0px
 
   li
@@ -94,6 +94,7 @@ a
     a
       padding: 10px 20px
       font-size: 15px
+      color: white
 
 // -----------------------------
 // Main
@@ -108,7 +109,7 @@ a
   text-align: center
   width: 100%
   margin-top: -125px
-  height: 600px
+  height: 625px
   background: red
   background: url(../../assets/images/banner.jpg)
   background-size: cover
@@ -125,46 +126,109 @@ a
 
 
 .recentproject
-  // background-color: pink
   width: 100%
-  height: 500px
-  color: white
   h3.title
     text-align: center
     background-color: grey
     height: 50px
+    font-size: 22px
+    color: white
+    font-weight: lighter
     line-height: 50px
-
+    text-transform: uppercase
   .projectone
-    // width: 32.3333%
     height: auto
-    // background-color:yellow
     float: left
-    margin: 20px 25px 0px 24px
-    img
-      width: 100%
-       
+    clear: right
+    margin: 20px 0px 0px 4px
+  .projectone:hover
+    opacity: 0.85
+
+  .overlay-content
+    width: 400px
+    min-height: 350px
+    padding-top: 134px
+    font-size: 20px
+    opacity: 0
+    position: absolute
+    text-align: center
+    background-color: #3DA5D3
+    color: black
+    top: 697px
+  .overlay-content:hover
+    opacity: 0.85
+  .button a
+    margin: 25px 0px 0px 0px
+    padding: 5px 40px 5px 40px
+    font-size: 30px
+    font-weight: lighter
+    border-style: solid
+    border-width: 1px
+    border-color: black
+    color: black
+
+.viewmore
+  text-align: center
+  border: 1px solid black
+  color: black
+
+  font-size: 15px
+  
+  padding: 10px 60px 10px 60px
+  margin: 25px 0px 10px 585px
+.viewmore:hover
+  background-color: #808080
+  color:black
+
 // -----------------------------
 // Work page style
 // -----------------------------
-.projects
-  background-color: green
-  overflow: hidden
-  float: left
-  width: 400px
 
-.overlay
-  background-color: black
+h3.title
+  color: rgb(164, 160, 188)
+  font-weight: lighter
+  font-size: 25px
+  font-weight: 28px
+  line-height: 50px
+
+
+.projectone 
+  float: left
+  margin: 20px 20px 10px 50px
+  .overlay-content-work
+    width: 449px
+    min-height: 399px
+    padding-top: 143px
+    font-size: 20px
+    opacity: 0
+    position: absolute
+    text-align: center
+    background-color: #3DA5D3
+    color: black
+    top: 209px
+  .overlay-content-work:hover
+    opacity: 0.85
+  .button a
+    margin: 25px 0px 0px 0px
+    padding: 5px 40px 5px 40px
+    font-size: 30px
+    font-weight: lighter
+    border-style: solid
+    border-width: 1px
+    border-color: black
+    color: black
 
 // -----------------------------
 // Footer
 // -----------------------------
 
 .footer
-  padding: 10px 0px 0px 0px
-
+  padding: 10px 0px 10px 0px
+  margin: 30px 0px 0px 0px
+  border-bottom: 1px solid #efefef
+  background: rgb(15, 15, 15)
   p
     margin: 10px 0px 0px 10px
-    padding: 0
+    padding-bottom: 5px
     font-size: 15px
 
