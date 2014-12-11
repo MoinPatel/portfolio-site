@@ -93,7 +93,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        title: 'Hello.  I AM Moin Patel',
+        title: 'Hello,  I AM Moin Patel',
         subtitle: ' Web, User Interface & Interactive Designer',
         project: [
           {
@@ -105,14 +105,14 @@ jQuery(function($) {
           {
             link: "http://mpcreative.ca/Integrativeassignment/",
             imgSrc: "../../assets/images/project-two.png",
-            imgAlt: "Not Far from the tree",
+            imgAlt: "Not Far From The Tree",
             desc: "Redesign the existing site"
           },
           {
             link: "http://marvl.in/i98d8",
             imgSrc: "../../assets/images/project-three.png",
             imgAlt: "InspiredMag",
-            desc: " Inspiration app for designer"
+            desc: "Inspiration app for designers"
           }
         ]
       });
@@ -159,25 +159,28 @@ jQuery(function($) {
         workproject: [
             {
               
-              link: "http://www.w3schools.com",
+              link: "http://mpcreative.ca/Integrativeassignment/",
               imgSrc: "../../assets/images/projectone-work.png",
-              imgAlt: "Not Far from the tree",
+              imgAlt: "Not Far From The Tree",
               desc: "Redesign of a existing site"
             },
             {
-              link: "http://www.w3schools.com",
+              link: "http://mpcreative.ca/Assignment3-new/index.html",
               imgSrc: "../../assets/images/projecttwo-work.png",
-              imgAlt: "tandooti Night"
+              imgAlt: "Tandoori night",
+              desc: "3 page website for a fictional restaurant"
             },
             {
-              link: "http://www.w3schools.com",
-              imgSrc: "../../assets/images/projectthree-work.png",
-              imgAlt: "tandooti Night"
+              link: "http://mpcreative.ca/integrative/",
+              imgSrc: "../../assets/images/projectfive-work.png",
+              imgAlt: "Amanda Moscar",
+              desc: "Redesign the website"
             },
             {
-              link: "http://www.w3schools.com",
-              imgSrc: "../../assets/images/projecttwo-work.png",
-              imgAlt: "tandooti Night"
+              link: "http://marvl.in/i98d8",
+              imgSrc: "../../assets/images/projectfour-work.png",
+              imgAlt: "InspiredMag",
+              desc: "Inspiration app for designers"
             }
         ]
       });

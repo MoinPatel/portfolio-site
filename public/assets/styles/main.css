@@ -1,87 +1,85 @@
-/* line 8, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 13, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 body {
   padding: 0;
   margin: 0;
   font-size: 14px;
   color: #555;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
-/* line 20, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 a {
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+}
 
-/* line 24, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .wrapper {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-/* line 30, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .header, .main, .footer {
   width: 100%;
   display: block;
-  clear: both; }
+  clear: both;
+}
 
-/* line 37, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .header {
   width: 90%;
   margin: 0 auto;
   padding-top: 20px;
-  overflow: hidden; }
-  /* line 43, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .header a.img {
-    float: left; }
+  overflow: hidden;
+}
+.header a.img {
+  float: left;
+}
 
-/* line 46, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .nav {
   float: right;
   color: #ffffff;
-  margin: 40px 10px 0px 0px; }
-  /* line 51, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .nav li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    list-style: none; }
-    /* line 56, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-    .nav li a {
-      padding: 0px 20px;
-      font-size: 20px;
-      color: #6C697D; }
-    /* line 60, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-    .nav li a:hover {
-      line-height: 5px;
-      color: grey; }
+  margin: 40px 10px 0px 0px;
+}
+.nav li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+.nav li a {
+  padding: 0px 20px;
+  font-size: 20px;
+  color: #6C697D;
+}
+.nav li a:hover {
+  line-height: 5px;
+}
 
-/* line 64, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .navfooter {
   float: right;
   color: white;
-  margin: 0px 5px 0px 0px; }
-  /* line 69, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .navfooter li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    list-style: none; }
-    /* line 75, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-    .navfooter li a {
-      padding: 10px 20px;
-      font-size: 15px;
-      color: white; }
+  margin: 0px 5px 0px 0px;
+}
+.navfooter li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+.navfooter li a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+}
 
-/* line 81, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .main {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-/* line 85, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .banner {
   text-align: center;
   width: 100%;
@@ -89,170 +87,171 @@ a {
   height: 625px;
   background: red;
   background: url(../../assets/images/banner.jpg);
-  background-size: cover; }
-  /* line 94, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .banner h2.name {
-    font-weight: lighter;
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    right: 30%;
-    top: 40%;
-    width: 600px;
-    text-align: center; }
+  background-size: cover;
+}
+.banner h2.name {
+  font-weight: lighter;
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  right: 30%;
+  top: 40%;
+  width: 600px;
+  text-align: center;
+}
 
-/* line 105, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .recentproject {
-  width: 100%; }
-  /* line 107, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .recentproject h3.title {
-    text-align: center;
-    background-color: grey;
-    height: 50px;
-    font-size: 22px;
-    color: white;
-    font-weight: lighter;
-    line-height: 50px;
-    text-transform: uppercase; }
-  /* line 116, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .recentproject .projectone {
-    height: auto;
-    float: left;
-    clear: right;
-    margin: 20px 0px 0px 40px; }
-  /* line 121, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .recentproject .projectone:hover {
-    opacity: 0.85; }
-  /* line 124, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .recentproject .overlay-content {
-    width: 397px;
-    margin-left: 2px;
-    min-height: 347px;
-    padding-top: 134px;
-    font-size: 20px;
-    opacity: 0;
-    position: absolute;
-    float: left;
-    text-align: center;
-    background-color: #3DA5D3;
-    color: black;
-    top: 700px; }
-  /* line 137, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .recentproject .overlay-content:hover {
-    opacity: 0.85; }
-  /* line 139, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .recentproject .button a {
-    margin: 25px 0px 0px 0px;
-    padding: 5px 40px 5px 40px;
-    font-size: 30px;
-    font-weight: lighter;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    color: black; }
+  width: 100%;
+}
+.recentproject h3.title {
+  text-align: center;
+  background-color: grey;
+  height: 50px;
+  font-size: 22px;
+  color: white;
+  font-weight: lighter;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.recentproject .projectone {
+  height: auto;
+  float: left;
+  clear: right;
+  margin: 20px 0px 0px 40px;
+}
+.recentproject .projectone:hover {
+  opacity: 0.85;
+}
+.recentproject .overlay-content {
+  width: 397px;
+  margin-left: 2px;
+  min-height: 347px;
+  padding-top: 134px;
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  float: left;
+  text-align: center;
+  background-color: #3DA5D3;
+  color: black;
+  top: 700px;
+}
+.recentproject .overlay-content:hover {
+  opacity: 0.85;
+}
+.recentproject .button a {
+  margin: 25px 0px 0px 0px;
+  padding: 5px 40px 5px 40px;
+  font-size: 30px;
+  font-weight: lighter;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  color: black;
+}
 
-/* line 149, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .viewmore {
   text-align: center;
   border: 1px solid black;
   color: black;
   font-size: 15px;
   padding: 10px 60px 10px 60px;
-  margin: 25px 0px 10px 585px; }
+  margin: 25px 0px 10px 585px;
+}
 
-/* line 158, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .viewmore:hover {
   background-color: #808080;
-  color: black; }
+}
 
-/* line 163, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 h3.title {
   color: #a4a0bc;
   font-weight: lighter;
   font-size: 25px;
   font-weight: 28px;
-  line-height: 50px; }
+  line-height: 50px;
+}
 
-/* line 171, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .workproject {
   float: left;
-  margin: 20px -60px 10px 140px; }
-  /* line 174, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .workproject .overlay-content-work {
-    width: 446px;
-    margin-left: 2px;
-    min-height: 396px;
-    padding-top: 143px;
-    font-size: 20px;
-    opacity: 0;
-    float: left;
-    position: absolute;
-    text-align: center;
-    background-color: #3DA5D3;
-    color: black;
-    margin-top: -402px; }
-  /* line 187, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .workproject .overlay-content-work:hover {
-    opacity: 0.85; }
-  /* line 189, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .workproject .button a {
-    margin: 25px 0px 0px 0px;
-    padding: 5px 40px 5px 40px;
-    font-size: 30px;
-    font-weight: lighter;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    color: black; }
+  margin: 20px -60px 10px 140px;
+}
+.workproject .overlay-content-work {
+  width: 446px;
+  margin-left: 2px;
+  min-height: 396px;
+  padding-top: 143px;
+  font-size: 20px;
+  opacity: 0;
+  float: left;
+  position: absolute;
+  text-align: center;
+  background-color: #3DA5D3;
+  color: black;
+  margin-top: -402px;
+}
+.workproject .overlay-content-work:hover {
+  opacity: 0.85;
+}
+.workproject .button a {
+  margin: 25px 0px 0px 0px;
+  padding: 5px 40px 5px 40px;
+  font-size: 30px;
+  font-weight: lighter;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  color: black;
+}
 
-/* line 198, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .bio {
   height: 300px;
   width: 950px;
-  margin: 0 auto; }
-  /* line 202, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .bio .bio-image {
-    float: left;
-    overflow: visible; }
-  /* line 205, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .bio .bio-text {
-    width: 650px;
-    font-size: 15px;
-    line-height: 25px;
-    float: right;
-    margin-top: 20px;
-    margin-right: 0px; }
-  /* line 212, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .bio .books {
-    margin: 50px 0px 0px 307px; }
-    /* line 214, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-    .bio .books .bookone {
-      margin-right: 40px;
-      height: 220px; }
-    /* line 217, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-    .bio .books .quote {
-      width: 340px;
-      margin: 0 auto;
-      margin-top: 0px;
-      margin-right: auto;
-      margin-bottom: 0px;
-      margin-left: auto;
-      text-align: center;
-      font-size: 20px;
-      padding-top: 100px; }
-      /* line 227, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-      .bio .books .quote .right {
-        float: right; }
-      /* line 229, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-      .bio .books .quote .skills {
-        width: 640px;
-        margin: 0 auto;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: 300px; }
+  margin: 0 auto;
+}
+.bio .bio-image {
+  float: left;
+  overflow: visible;
+}
+.bio .bio-text {
+  width: 650px;
+  font-size: 15px;
+  line-height: 25px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+.bio .books {
+  margin: 50px 0px 0px 307px;
+}
+.bio .books .bookone {
+  margin-right: 40px;
+  height: 220px;
+}
 
-/* line 237, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.quote {
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 100px;
+}
+.quote .right {
+  float: right;
+}
+
+.skills {
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: 300px;
+}
+
 .downloadbutton {
   width: 220px;
   height: 47px;
@@ -270,58 +269,60 @@ h3.title {
   transition-property: background;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0); }
-  /* line 255, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .downloadbutton .downloadbutton:hover {
-    background: none; }
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px transparent;
+}
 
-/* line 259, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.downloadbutton:hover {
+  background: none;
+  color: black;
+}
+
 .form {
   width: 630px;
   text-align: center;
   height: auto;
   margin: 25px auto;
-  position: relative; }
-  /* line 265, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .form h2 {
-    margin: 22px 0px 15px 5px;
-    font-size: 30px; }
-  /* line 268, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .form p {
-    margin: 0px 0px 20px 0px;
-    font-size: 15px; }
-  /* line 271, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .form input#subject {
-    width: 100%;
-    height: 55px;
-    border: 1px solid #bfbfbf;
-    background-color: transparent;
-    position: relative;
-    color: black;
-    font-size: 14px;
-    padding-left: 20px;
-    letter-spacing: 0.01em;
-    -webkit-border-radius: 3px 3px 0 0;
-    -moz-border-radius: 3px 3px 0 0;
-    -ms-border-radius: 3px 3px 0 0;
-    -o-border-radius: 3px 3px 0 0;
-    border-radius: 3px 3px 0 0; }
-  /* line 286, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .form textarea {
-    width: 100%;
-    height: 150px;
-    border: 1px solid #bfbfbf;
-    border-top: none;
-    background-color: transparent;
-    position: relative;
-    color: black;
-    font-size: 14px;
-    padding-left: 20px;
-    padding-top: 20px;
-    letter-spacing: 0.01em;
-    line-height: 23px; }
+  position: relative;
+}
+.form h2 {
+  margin: 22px 0px 15px 5px;
+  font-size: 30px;
+}
+.form p {
+  margin: 0px 0px 20px 0px;
+  font-size: 15px;
+}
+.form input#subject {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #bfbfbf;
+  background-color: transparent;
+  position: relative;
+  color: black;
+  font-size: 14px;
+  padding-left: 20px;
+  letter-spacing: 0.01em;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.form textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #bfbfbf;
+  border-top: none;
+  background-color: transparent;
+  position: relative;
+  color: black;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 20px;
+  letter-spacing: 0.01em;
+  line-height: 23px;
+}
 
-/* line 300, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 #email-address {
   width: 75%;
   height: 55px;
@@ -332,9 +333,9 @@ h3.title {
   position: relative;
   color: black;
   font-size: 14px;
-  padding-left: 20px; }
+  padding-left: 20px;
+}
 
-/* line 312, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 #submit {
   width: 25%;
   height: 55px;
@@ -348,32 +349,32 @@ h3.title {
   margin-left: -4px;
   text-align: center;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 328, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .social {
   width: 710px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 500px;
-  margin-top: 50px; }
-  /* line 334, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .social .social a {
-    text-decoration: none;
-    color: white; }
+  margin-top: 50px;
+}
+.social .social a {
+  text-decoration: none;
+  color: white;
+}
 
-/* line 337, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .twitter a, .linkedin a, .behance a, .google a, .github a, .mail a {
-  color: white; }
+  color: white;
+}
 
-/* line 340, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .twitter {
   height: 115px;
   width: 213px;
   background-color: #55acee;
   float: left;
   padding-top: 50px;
-  /*animation*/
+  /*animation */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -382,21 +383,21 @@ h3.title {
   transform-origin: 0 100%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  box-shadow: 0 0 1px transparent;
+}
 
-/* line 361, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .twitter:hover {
   -webkit-transform: skew(-10deg);
-  transform: skew(-10deg); }
+  transform: skew(-10deg);
+}
 
-/* line 366, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .linkedin {
   height: 115px;
   width: 213px;
   background-color: #0e76a8;
   float: left;
   padding-top: 50px;
-  /*animation*/
+  /*animation */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -405,21 +406,21 @@ h3.title {
   transform-origin: 0 100%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  box-shadow: 0 0 1px transparent;
+}
 
-/* line 384, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .linkedin:hover {
   -webkit-transform: skew(-10deg);
-  transform: skew(-10deg); }
+  transform: skew(-10deg);
+}
 
-/* line 388, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .behance {
   height: 115px;
   width: 213px;
   background-color: #1769ff;
   float: left;
   padding-top: 50px;
-  /*animation*/
+  /*animation */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -428,21 +429,21 @@ h3.title {
   transform-origin: 0 100%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  box-shadow: 0 0 1px transparent;
+}
 
-/* line 406, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .behance:hover {
   -webkit-transform: skew(-10deg);
-  transform: skew(-10deg); }
+  transform: skew(-10deg);
+}
 
-/* line 410, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .google {
   height: 115px;
   width: 213px;
   background-color: #dd4b39;
   float: left;
   padding-top: 50px;
-  /*animation*/
+  /*animation */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -451,21 +452,21 @@ h3.title {
   transform-origin: 0 100%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  box-shadow: 0 0 1px transparent;
+}
 
-/* line 428, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .google:hover {
   -webkit-transform: skew(-10deg);
-  transform: skew(-10deg); }
+  transform: skew(-10deg);
+}
 
-/* line 432, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .github {
   height: 115px;
   width: 213px;
   background-color: #171515;
   float: left;
   padding-top: 50px;
-  /*animation*/
+  /*animation */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -474,21 +475,21 @@ h3.title {
   transform-origin: 0 100%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  box-shadow: 0 0 1px transparent;
+}
 
-/* line 451, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .github:hover {
   -webkit-transform: skew(-10deg);
-  transform: skew(-10deg); }
+  transform: skew(-10deg);
+}
 
-/* line 455, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .mail {
   height: 115px;
   width: 213px;
   background-color: #BB8BB9;
   float: left;
   padding-top: 50px;
-  /*animation*/
+  /*animation */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -497,21 +498,24 @@ h3.title {
   transform-origin: 0 100%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  box-shadow: 0 0 1px transparent;
+}
 
-/* line 473, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .mail:hover {
   -webkit-transform: skew(-10deg);
-  transform: skew(-10deg); }
+  transform: skew(-10deg);
+}
 
-/* line 478, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 10px 0px 10px 0px;
   margin: 30px 0px 0px 0px;
   border-bottom: 1px solid #efefef;
-  background: #0f0f0f; }
-  /* line 483, C:/Users/MoinPatel/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .footer p {
-    margin: 10px 0px 0px 10px;
-    padding-bottom: 5px;
-    font-size: 15px; }
+  background: #0f0f0f;
+}
+.footer p {
+  margin: 10px 0px 0px 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

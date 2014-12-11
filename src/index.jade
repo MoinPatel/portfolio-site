@@ -109,15 +109,15 @@ html
         <h3 class="title">{{title}}</h3>
         {{#workproject}}
           <div class="workproject">
-            <a href="{{link}}">
-              <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+            <a href="{{link}}" target="_blank">
+              <img src="{{imgSrc}}">   
              </a>
               
             <div class="overlay-content-work">
              <h3>{{imgAlt}}</h3>
              <h5>{{desc}}</h5>
                <div class="button">
-               <a href="{{link}}">
+               <a href="{{link}}" target="_blank">
                  <h6>View</h6>
                </a>
               </div>
@@ -214,7 +214,7 @@ html
         <div class="form">
           <h2>Get in touch</h2>
           <p>If you'd like to get in touch with me about future projects, or have any questions at all, feel free to catch me with the details below.</p>
-          <form action="MAILTO:moinpatel1992@gmail.com" method="post" enctype="text/plain">
+          <form action="MAILTO:moinpatel1992@gmail.com" method="post">
             <input id="subject" type="text" name="subject" placeholder="Subject">
             <textarea name="message" placeholder="Your message"></textarea>
             <input id="email-address" type="text" name="email-address" placeholder="Your email address">
