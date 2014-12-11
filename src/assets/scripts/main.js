@@ -97,19 +97,22 @@ jQuery(function($) {
         subtitle: ' Web, User Interface & Interactive Designer',
         project: [
           {
-            link: "http://www.w3schools.com",
+            link: "http://mpcreative.ca/Assignment3-new/index.html",
             imgSrc: "../../assets/images/project-one.png",
-            imgAlt: "tandooti Night"
+            imgAlt: "Tandoori night",
+            desc: "3 page website for a fictional restaurant"
           },
           {
-            link: "http://www.w3schools.com",
+            link: "http://mpcreative.ca/Integrativeassignment/",
             imgSrc: "../../assets/images/project-two.png",
-            imgAlt: "Not Far from the tree"
+            imgAlt: "Not Far from the tree",
+            desc: "Redesign the existing site"
           },
           {
-            link: "http://www.w3schools.com",
+            link: "http://marvl.in/i98d8",
             imgSrc: "../../assets/images/project-three.png",
-            imgAlt: "InspiredMag"
+            imgAlt: "InspiredMag",
+            desc: " Inspiration app for designer"
           }
         ]
       });
@@ -155,9 +158,11 @@ jQuery(function($) {
         title: 'Work',
         workproject: [
             {
+              
               link: "http://www.w3schools.com",
               imgSrc: "../../assets/images/projectone-work.png",
-              imgAlt: "tandooti Night"
+              imgAlt: "Not Far from the tree",
+              desc: "Redesign of a existing site"
             },
             {
               link: "http://www.w3schools.com",
@@ -276,7 +281,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        title: 'activity'
+        title: 'Activity'
       });
 
     },
