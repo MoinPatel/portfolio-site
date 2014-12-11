@@ -16,6 +16,7 @@ jQuery(function($) {
       '' : 'home',
       'work': 'work',
       'about': 'about',
+      'activity': 'activity',
       'contact': 'contact'
     },
 
@@ -35,6 +36,12 @@ jQuery(function($) {
     about: function() {
       console.log('Navigating to About Page');
       App.views['about'].render();
+    },
+
+    // Activity Route
+    activity: function() {
+      console.log('Navigating to activity Page');
+      App.views['activity'].render();
     },
 
     // Contact Route
@@ -59,6 +66,7 @@ jQuery(function($) {
       home: new HomeView(),
       work: new WorkView(),
       about: new AboutView(),
+      activity: new ActivityView(),
       contact: new ContactView()
     };
 
@@ -158,7 +166,7 @@ jQuery(function($) {
             },
             {
               link: "http://www.w3schools.com",
-              imgSrc: "../../assets/images/projectone-work.png",
+              imgSrc: "../../assets/images/projectthree-work.png",
               imgAlt: "tandooti Night"
             },
             {
@@ -203,7 +211,34 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>About Page</h1>'
+        titleone: 'About',
+        titletwo: 'Favorite Books',
+        titlethree: 'Favorite Quotes',
+        titlefour: 'Skills',
+        aboutone:"Hi there, I'm Moin. I'm a Interactive designer from Toronto, who loves food, funny blogs and new technology. I have a passion for modern design and an understanding of the importance of good user experience. I enjoy making things look good and I love making them work. I am currently enroll in web design and interactive media program at Humber College.",
+        abouttwo:"I am currently searching for a design internship where I can grow as a designer and help create digital experiences that are both effective and delightful.",
+        quote:'"A design is not finished until somebody is using it"',
+        author:'-Brenda Laurel',
+        type:[
+            {
+              name: "Core:",
+              detail: "Print and Web Design, User Experience Design"
+            },
+             {
+              name: "Presentational:",
+              detail: "CSS, LESS, Responsive Design"
+            },
+             {
+              name: "Development:",
+              detail: "HTML5, Jquery, PHP, Sql, Wordpress"
+            },
+             {
+              name: "Work flow:",
+              detail: "Github"
+            } 
+        ]
+
+        
       });
 
     },
@@ -221,6 +256,43 @@ jQuery(function($) {
 
   });
 
+  // -----------------------------
+  // Activity View
+  // -----------------------------
+  var ActivityView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#activity',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        title: 'activity'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
   // -----------------------------
   // Contact View
   // -----------------------------
@@ -242,7 +314,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Contact Page</h1>'
+        title: 'Contact'
       });
 
     },

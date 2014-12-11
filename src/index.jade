@@ -38,6 +38,8 @@ html
 
         li: a(href="/about") About
 
+        li: a(href="/activity") Activity
+
         li: a(href="/contact") Contact
 
     div.main
@@ -51,6 +53,8 @@ html
         li: a(href="/work") Work
 
         li: a(href="/about") About
+
+        li: a(href="/activity") Activity
 
         li: a(href="/contact") Contact
 
@@ -102,35 +106,110 @@ html
     <div class="page work">
 
       <div class="header">
-
         <h3 class="title">{{title}}</h3>
-
         {{#workproject}}
-          <div class="projectone">
-              <a href="{{link}}">
-                <img src="{{imgSrc}}" alt="{{imgAlt}}">   
-              </a>
+          <div class="workproject">
+            <a href="{{link}}">
+              <img src="{{imgSrc}}" alt="{{imgAlt}}">   
+             </a>
               
-              <div class="overlay-content-work">
-                <h3>{{imgAlt}}</h3>
-                <h5>{{imgAlt}}</h5>
-                <div class="button">
-                  <a href="{{link}}">
-                    <h6>View</h6>
-                  </a>
-                </div>
+            <div class="overlay-content-work">
+             <h3>{{imgAlt}}</h3>
+             <h5>{{imgAlt}}</h5>
+               <div class="button">
+               <a href="{{link}}">
+                 <h6>View</h6>
+               </a>
               </div>
+            </div>
           </div>
-          {{/workproject}}
+        {{/workproject}}
       </div>
       
     </div>
 
   script#about(type="text/template").
-    <div class="page about">{{{content}}}</div>
+    <div class="page about">
+       <div class="header">
+        <div class="bio">
+          <h3 class="title">{{titleone}}</h3>
+          <div class="bio-image">
+              <img src="../../assets/images/self.png" height="200" width="200">
+          </div>
+          <div class="bio-text">
+              <h3>{{aboutone}}</h3>
+              <br>
+              <h3 class="space">{{abouttwo}}</h3>
+          </div>
+        </div>
+        <div class="bio">
+          <h3 class="title">{{titletwo}}</h3>
+            <div class="books">
+              <a href="http://www.amazon.ca/Dont-Make-Me-Think-Usability/dp/0321344758" target="_blank"><img src="../../assets/images/book1.jpg" class="bookone"></a>
+              <a href="http://www.amazon.ca/How-We-Decide-Jonah-Lehrer/dp/1455875309" target="_blank"><img src="../../assets/images/book2.jpg"></a>
+            </div>
+        </div>
+        <div class="bio">
+          <h3 class="title">{{titlethree}}</h3>
+          <div class="quote">
+            <h3>{{quote}}</h3>
+            <h4 class="right">{{author}}</h4>
+          </div>
+            
+        </div>
+        <div class="bio">
+          <h3 class="title">{{titlefour}}</h3>
+          <div class="skills">
+           {{#type}}
+            <h2>{{name}}{{detail}}</h2>
+           {{/type}}           
+        </div>
+
+        <div class="downloadbutton">
+          <a href="http://mpcreative.ca/Document/Moin_Patel.pdf" target="_blank">Download Resume</a>
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  script#activity(type="text/template").
+    <div class="page activity">
+     <div class="header">
+        
+        <h3 class="title">{{title}}</h3>
+        
+        <div class="pintrest">
+          <a data-pin-do="embedUser" class="pintrest" href="http://www.pinterest.com/moinpatel/" data-pin-scale-width="180" data-pin-scale-height="500" data-pin-board-width="1400">Visit Moin Patel's profile on Pinterest.</a>
+          <!-- Please call pinit.js only once per page -->
+          <script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+          
+        </div>
+    </div>
+
 
   script#contact(type="text/template").
-    <div class="page contact">{{{content}}}</div>
+    <div class="page contact">
+      <div class="header">
+
+        <h3 class="title">{{title}}</h3>
+         
+
+        <div class="form">
+          <h2>Get in touch</h2>
+          <p>If you'd like to get in touch with me about future projects, or have any questions at all, feel free to catch me with the details below.</p>
+          <form action="MAILTO:moinpatel1992@gmail.com" method="post" enctype="text/plain">
+            <input id="subject" type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <input id="email-address" type="text" name="email-address" placeholder="Your email address">
+            <input id="submit" type="submit" value="Send">
+        </form>
+        </div>
+
+      </div>
+
+    </div>
 
 
   // Libraries
@@ -147,6 +226,4 @@ html
 
 
   // Application
-
-
   script(type="text/javascript", src="assets/scripts/main.js")
