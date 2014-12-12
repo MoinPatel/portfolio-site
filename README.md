@@ -1,4 +1,11 @@
-# Single Page Application Boilerplate
+# Portfolio-site
+
+Language used
+	- Jade
+	- Sass
+	- I used Prepose and gulp to compile main.js and index.scss
+	- Used backbone for site navigation
+	
 
 ## Installation
 
